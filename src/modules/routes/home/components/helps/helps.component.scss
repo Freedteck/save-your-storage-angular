@@ -1,0 +1,27 @@
+section {
+  padding-top: 220px;
+  max-width: 1120px;
+  margin: 0 auto;
+
+  .wrapper {
+    background: rgba(240, 99, 184, 0.15);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  img {
+    flex-basis: 50%;
+    img {
+      width: 90%;
+    }
+  }
+  .head-desc {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-right: 80px;
+  }
+}

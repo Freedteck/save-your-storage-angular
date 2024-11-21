@@ -1,0 +1,33 @@
+<button *ngIf="buttonClass === 'raised'" mat-raised-button [class]="color">
+  <div>
+    {{ buttonText }}
+    <img
+      src="assets/arrow-right.svg"
+      alt="go button"
+      width="32"
+      *ngIf="showArrow"
+    />
+  </div>
+</button>
+<button *ngIf="buttonClass === 'stroked'" mat-stroked-button [class]="color">
+  <div>
+    {{ buttonText }}
+    <img
+      src="assets/arrow-right.svg"
+      alt="go button"
+      width="32"
+      *ngIf="showArrow"
+    />
+  </div>
+</button>
+<button *ngIf="buttonClass === 'flat'" mat-flat-button [class]="color">
+  <div>
+    {{ buttonText }}
+    <img
+      src="assets/arrow-right.svg"
+      alt="go button"
+      width="32"
+      *ngIf="showArrow"
+    />
+  </div>
+</button>

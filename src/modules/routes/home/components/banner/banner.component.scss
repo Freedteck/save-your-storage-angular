@@ -1,0 +1,35 @@
+section {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-top: 100px;
+  position: relative;
+
+  .headline {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 640px;
+
+    p {
+      width: 55%;
+    }
+
+    a {
+      background: rgba(156, 105, 226, 1);
+      width: 170px;
+      padding: 20px;
+      align-self: flex-start;
+      border-radius: 50px;
+      color: #fff;
+      font-weight: 800;
+      text-align: center;
+    }
+  }
+
+  img {
+    position: absolute;
+    right: -128px;
+    bottom: -120px;
+    width: 80%;
+  }
+}

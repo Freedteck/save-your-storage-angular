@@ -1,0 +1,116 @@
+.testimonials {
+  padding-top: 100px;
+  max-width: 1120px;
+  margin: 0 auto;
+
+  .wrapper {
+    background: rgba(156, 105, 226, 1);
+    border-radius: 50px;
+    padding: 50px 0 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    h2 {
+      color: white;
+    }
+
+    p {
+      font-weight: 400;
+    }
+
+    .testimonial-container {
+      display: flex;
+      gap: 32px;
+      overflow: auto;
+      scrollbar-width: none;
+
+      .testimonial {
+        display: flex;
+        padding: 60px;
+        gap: 40px;
+        box-shadow: 0px 20px 0px 0px rgba(98, 40, 180, 0.3);
+        background-color: #fff;
+        border-radius: 20px;
+        width: 700px;
+        flex-shrink: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+        .img {
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          background-color: grey;
+          flex-shrink: 0;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          margin-top: 20px;
+        }
+
+        .title {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          p {
+            color: rgba(156, 105, 226, 1);
+            font-weight: 500;
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+
+    .testimonial-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+
+      button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      .circles {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        button {
+          background: rgba(255, 255, 255, 1);
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+
+          &.active {
+            background: rgba(240, 99, 184, 1);
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+
+      .nav-icons {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+    }
+  }
+}

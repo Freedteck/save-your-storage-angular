@@ -1,0 +1,39 @@
+<section class="testimonials container">
+  <div class="wrapper">
+    <h2>Testimonials</h2>
+    <div class="testimonial-container">
+      <div *ngFor="let testimonial of testimonials" class="testimonial">
+        <div class="img">
+          <img [src]="testimonial.image" alt="testimonial" />
+        </div>
+        <div class="info">
+          <div class="title">
+            <h4>{{ testimonial.author }}</h4>
+            <p>{{ testimonial.occupation }}</p>
+          </div>
+          <p>{{ testimonial.message }}</p>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="circles">
+        <button
+          *ngFor="let _ of testimonials; let i = index"
+          [class.active]="i === 0"
+        ></button>
+      </div>
+      <div class="nav-icons">
+        <button class="prev" (click)="prevTestimonial()">
+          <img
+            src="/assets/arrow-left-disabled.svg"
+            alt="previous"
+            width="32"
+          />
+        </button>
+        <button class="next" (click)="nextTestimonial()">
+          <img src="assets/arrow-right-white.svg" alt="next" width="32" />
+        </button>
+      </div>
+    </nav>
+  </div>
+</section>
